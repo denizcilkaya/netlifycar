@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cars Website</title>
+    <!-- ikon için font awesome cdn ve font awesome kullandık-->
+    <!--css dosyasını html dosyamıza bağladık-->
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+     <div class="container">   <!--tüm siteyi kapsayıcı içine aldım-->
+         <div class="navbar">  <!--üst barı kapsayıcı içerisine aldım-->
+          <a href="#">
+             <img src="./kaynaklar/logo.png" alt="logo">
+             <!--alt kısmına logo yüklenmezse yazacak olan açıklama yazısı girilir-->
+          </a>
+           <nav>
+            <ul>
+                <!--href kısmına hedef linkler yazılır-->
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OUR CARS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a> <!--icon için i etiketi kullandık-->
+                </li>
+            </ul>
+          </nav>
+         </div>
+         <div class="row">     <!--alt barı kapsayıcı bir div açtık-->
+              <div class="col"><!--alt barı sol ve sağ iki alt bölüme ayırdıkı-->
+                  <h1>CARS
+                      <hr>
+                      WEBSİTE 
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis veritatis nisi officia delectus dolorum facilis maxime? Voluptatibus consectetur, cupiditate facere modi illum asperiores odio debitis unde deleniti minima doloremque!
+                  </p>
+                  <button class="btn">ALL CARS</button>
+              </div>
+              <div class="col"> <!--alt barı sol ve sağ iki alt bölüme ayırdık-->
+                  <div class="cards"> <!--sağdaki kısmı topluca kapsayıcıya aldık-->
+                      <div class="card  card1"> <!--kapsayıcıyı alt başlıklara indirgedik-->
+                        <div class="card-head"> <!--kartın açıklama kısmı-->
+                          <h5>TOGG</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="card-bottom"> <!--kart buton kısmı-->
+                          <a href="#" class="btn">Details</a>
+                        </div>
+                      </div>
+                      <div class="card card2"> <!--kapsayıcıyı alt başlıklara indirgedik-->
+                        <div class="card-head"> <!--kartın açıklama kısmı-->
+                          <h5>AUDİ</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="card-bottom"> <!--kart buton kısmı-->
+                          <a href="#" class="btn">Details</a>
+                        </div>
+                      </div>
+                      <div class="card card3"> <!--kapsayıcıyı alt başlıklara indirgedik-->
+                        <div class="card-head"> <!--kartın açıklama kısmı-->
+                          <h5>BMW</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="card-bottom"> <!--kart buton kısmı-->
+                          <a href="#" class="btn">Details</a>
+                        </div>
+                      </div>
+                      <div class="card card4"> <!--kapsayıcıyı alt başlıklara indirgedik-->
+                        <div class="card-head"> <!--kartın açıklama kısmı-->
+                          <h5>MERCEDES-BENZ</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="card-bottom"> <!--kart buton kısmı-->
+                          <a href="#" class="btn">Details</a>
+                        </div>
+                      </div>
+                  </div>
+              <div class="col"> 
+            
+
+              </div>  
+         </div>
+     </div>
+</body>
+</html>

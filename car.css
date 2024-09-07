@@ -1,0 +1,166 @@
+/*font urlsi girdik*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+/*buraya yazdığımız özellikler tüm html etiketleri için geçerli*/
+*{
+  margin: 0;              /*tüm site için yan boşlukları sıfırladık*/
+  padding: 0;             /*tüm site için yan boşlukları sıfırladık*/
+  box-sizing: border-box; /*scroll kaldırmak için ekranı doldurduk*/
+  font-family: "Titillium Web", sans-serif;
+}
+
+/*buraya yazdığımız özellikler .container için geçerli*/
+.container{
+  height: 100vh;      /*yüksekliği görselle doldurduk*/
+  width: 100%;        /*genişliği görselle doldurduk*/
+  padding-left:   8%; /*soldan %8 boşluk bıraktık*/
+  padding-right:  8%; /*sağdan %8 boşluk bıraktık*/
+  background-image: 
+     linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , /*siyah gradient ekledik*/
+     url(./kaynaklar/bg.png);                   /*arkaplan görseli ekledik*/
+  background-position: center;                /*görselin sayfayı ortalamasını sağladık*/
+  background-size: cover;                     /*görselin sayfanın tamamına sığmasını sağladık*/
+}
+
+/*buraya yazdığımız özellikler row içindeki yazılar için geçerli*/
+p{
+  font-size: 10px;    /*font büyüklüğü ayarladık*/
+  color: #fff;      /*renk ayarladık*/
+  line-height: 16px;  /*satır yüksekliği ayarladık*/
+}
+
+/*buraya yazdığımız özellikler btn içindeki yazılar için geçerli*/
+.btn{
+padding: 12px 28px;        /*butonu içindeki yazıdan uzaklaştırdık*/
+font-size: 12px ;          /*yazı boyutunu ayarladık*/
+font-weight: 700;          /*font büyüklüğünü ayarladık*/
+margin-top: 30px;          /*üstten boşluk verdik*/
+cursor: pointer;           /*buton üzerine gelince fare imleci pointera dönüştü*/
+color: #000;             /*buton üzerindeki yazıya renk verdik*/
+background-color: #fff;  /*butonun arkaplan rengi*/
+border-radius: 20px;       /*butonun köşelerine radyus ekledik*/
+text-decoration: none;     /*butonun altındaki çizgiyi kaldırdık*/
+border: 1px solid red;   /*butonun etrafına kırmızı stroke geçtik*/
+}
+
+
+.btn:hover{/*hover ile buton üstüne gidince renk değiştirdik*/
+ background-color: #000;  /*fare üzerine gidince buton hangi renk olacak*/
+ color: #fff;             /*fare üzerine gidince buton içi yazı hangi renk olacak*/
+ border-color:#fff ;      /*fare üzerine gidince buton etrafı stroke hangi renk olacak*/
+ transition: ease 0.3s; /*yazı üstüne gidince renk değişme süresini ayarladık*/
+}
+
+/*buraya yazdığımız özellikler .navbar için geçerli*/
+.navbar{
+  height: 12%;                    /*navbara yükseklik kazandırdık*/
+  display: flex;                  /*alt alta olan yazıları yan yana sıraladı*/
+  justify-content: space-between; /*imgeleri birbirinden en uzağa gönderdik*/
+  padding-top: 3%;
+}
+
+/*buraya yazdığımız özellikler nav ul li a içindeki yazılar için geçerli*/
+nav ul li a{
+   color: #fff;         /*rengini ayarladık*/
+   text-decoration: none; /*yazının altındaki çizgiyi kaldırdık*/
+   transition: ease 0.3s; /*yazı üstüne gidince renk değişme süresini ayarladık*/
+}
+
+/*buraya yazdığımız özellikler nav ul li  içindeki yazılar için geçerli*/
+nav ul li{
+    list-style:none   /*yazılanların altındaki liste nokta etiketini kaldırdık*/
+ }
+
+/*buraya yazdığımız özellikler nav ul içindeki yazılar için geçerli*/
+ nav ul{
+   display: flex;     /*nav ul etiketi altındakileri yan yana getirdik*/
+   column-gap: 20px;  /*yanyana olan yazıların arasına 20px boşluk bıraktırdık*/
+ }
+
+ nav ul li a:hover{ /*hover ile yazı üstüne gidince renk değiştirdik*/
+    color: #000;  /*rengini ayarladık*/
+ }
+
+/*buraya yazdığımız özellikler row içindeki yazılar için geçerli*/
+ .row{
+   display: flex;        /*row etiketi aldındaki yazılanları yan yana getirdik*/
+   column-gap: 10px;     /*sağ barı sol bardan 10px uzaklaştırdık*/
+   height:    88%;       /*sağ kısma yüzde yüksekliği verdik*/
+   align-items: center;  /*sağ kısmı ortaladık*/
+ }
+
+ /*buraya yazdığımız özellikler row h1 içindeki yazılar için geçerli*/
+ h1{
+  color:#fff;       /*yazı rengi ayarladık*/
+  font-size: 100px;   /*font büyüklüğü ayarladık*/
+ }
+
+ /*buraya yazdığımız özellikler desc içindeki yazılar için geçerli*/
+ .desc{
+  font-size: 16px;     /*font büyüklüğünü ayarladık*/
+ }
+
+ /*buraya yazdığımız özellikler tüm card özneleri için geçerlidir*/
+ .cards{
+  max-width: 500px;   /*maksimum yükseklik ayarlattık*/
+  margin: auto;       /*otomatik ortalattık*/
+ }
+
+ /*buraya yazdığımız özellikler col içindeki yazılar için geçerli*/
+ .col{
+  flex-basis: 50%;  /*satırın sayfanın yüzde kaçını kaplayacağını ayarladık*/
+  padding-top: 5%;  /*soldaki col bara üstten yüzde 5 boşluk verdik*/
+ }
+
+ /*buraya yazdığımız özellikler card içindeki yazılar için geçerli*/
+ .card{
+  width: 200px;
+  height: 230px;  
+  display: inline-block;  /*etiketler üzerinde genişlik ve yükseklik ayarlamaya izin verir*/
+  background-position: center;   /*arkaplan resmini ortalattık*/
+  background-size: cover;     /*resmi karta tam doldurttuk*/
+  border-radius: 10px;  /*köşelere radyus verdik*/
+  padding: 15px 25px;   /*kartı içindeki öznelerden uzaklaştırdık*/
+  cursor: pointer;  /*imleci üzerine götürünce işaretçiye dönüüştürür*/
+  border: 1px solid red;  /*kart etrafına stroke ekledik*/
+  position: relative;  /*içindeki öğelere konum olarak sınırlama getirir*/
+  margin: 10px 15px;  /*diğer kartlardan uzaklık verdik*/ 
+  transition: ease 0.5s; /*hover süresini ayarladık*/
+ }
+
+ /*buraya yazdığımız özellikler carda hover verir*/
+ .card:hover{
+  transform: translateY(-10px);  /*kartın üzerine gidildiğinde kart 10 piksel yükselir*/
+  border-color: #fff;  /*kart üzerine gelindiğinde border rengi kırmızıdan beyaza döner*/
+ } 
+
+ /*buraya yazdığımız özellikler kart başlığı için geçerli*/
+ .card .card-head{
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  border-radius: 6px;  /*iç başlığa radyus verdik*/
+  padding: 6px;  /*kenarlardan boşluk verdik*/
+ }
+
+ /*buraya yazdığımız özellikler card-bottom'ı etkiler*/
+ .card .card-bottom{
+  position: absolute;  /* en yakın pozisyon değeri relative olan elemana göre kendini konumlandırır*/
+  bottom: 26px;
+ }
+
+ /*buradan sonra ayrı kartlar için ayrı görselleri girdik*/
+  .card.card1{
+    background-image: url(./kaynaklar/pic-1.png);
+  }
+
+  .card.card2{
+    background-image: url(./kaynaklar/pic-2.png);
+  }
+
+  .card.card3{
+    background-image: url(./kaynaklar/pic-3.png);
+  }
+
+  .card.card4{
+    background-image: url(./kaynaklar/pic-4.png);
+  }
